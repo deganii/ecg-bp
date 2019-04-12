@@ -10,7 +10,7 @@ A = fread(fileID, [5000],'float');
 fclose(fileID);
 
 fs = 125; % ECG Sample Rate in Hz
-time_sec = 1:length(A)/fs;
+time_sec = (1:length(A))/fs;
 % plot(time_sec, log10(A))
 % plot(time_sec, log(A))
 plot(time_sec, A)
